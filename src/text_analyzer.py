@@ -8,23 +8,9 @@ import re
 from typing import Dict, List, Any, Tuple
 from collections import Counter
 
-try:
-    import spacy
-    nlp = spacy.load("en_core_web_sm")
-    HAS_SPACY = True
-except (ImportError, OSError):
-    nlp = None
-    spacy = None
-    HAS_SPACY = False
-
-try:
-    from sklearn.feature_extraction.text import TfidfVectorizer
-    from sklearn.metrics.pairwise import cosine_similarity
-    HAS_SKLEARN = True
-except ImportError:
-    TfidfVectorizer = None
-    cosine_similarity = None
-    HAS_SKLEARN = False
+# Lightweight text processing - no heavy ML dependencies
+HAS_SPACY = False
+HAS_SKLEARN = False
 
 import numpy as np
 
@@ -33,20 +19,18 @@ class TextAnalyzer:
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
+        self.vectorizer = None
+        self.use_spacy = False
         
-        # Initialize TF-IDF vectorizer
-        if HAS_SKLEARN and TfidfVectorizer:
-            self.vectorizer = TfidfVectorizer(
-                max_features=5000,
-                stop_words='english',
-                ngram_range=(1, 2),
-                min_df=1,
-                max_df=0.8
-            )
-        else:
-            self.vectorizer = None
-            
-        self.use_spacy = HAS_SPACY
+        # Lightweight keyword lists for fast relevance scoring
+        self.common_keywords = {
+            'travel': ['trip', 'travel', 'visit', 'tour', 'destination', 'journey', 'vacation'],
+            'planning': ['plan', 'organize', 'schedule', 'arrange', 'prepare', 'book', 'reserve'],
+            'activities': ['activity', 'experience', 'attraction', 'adventure', 'explore', 'discover'],
+            'food': ['food', 'restaurant', 'cuisine', 'dining', 'eat', 'meal', 'cafe'],
+            'culture': ['culture', 'history', 'tradition', 'heritage', 'festival', 'art', 'museum'],
+            'accommodation': ['hotel', 'stay', 'accommodation', 'lodging', 'room', 'guest']
+        }
         
     def analyze_documents(self, documents: List[Dict[str, Any]], 
                          persona: str, job_to_be_done: str) -> List[Dict[str, Any]]:

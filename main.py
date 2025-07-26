@@ -13,8 +13,8 @@ from typing import Dict, List, Any
 from datetime import datetime
 
 from src.pdf_processor import PDFProcessor
-from src.text_analyzer import TextAnalyzer
-from src.section_ranker import SectionRanker
+from src.text_analyzer_lite import LightweightTextAnalyzer
+from src.section_ranker_lite import LightweightSectionRanker
 from src.utils import setup_logging, validate_inputs, save_output
 
 def main():
@@ -38,10 +38,10 @@ def main():
         logger.info("Starting Adobe Round 1B Document Intelligence Processing")
         start_time = time.time()
         
-        # Initialize components
+        # Initialize lightweight components for faster processing
         pdf_processor = PDFProcessor()
-        text_analyzer = TextAnalyzer()
-        section_ranker = SectionRanker()
+        text_analyzer = LightweightTextAnalyzer()
+        section_ranker = LightweightSectionRanker()
         
         # Check for input files
         if not input_dir.exists():
