@@ -67,7 +67,7 @@ class PDFProcessor:
         }
         
         with pdfplumber.open(pdf_path) as pdf:
-            for page_num, page in enumerate(pdf.pages, 1):
+            for page_num, page in enumerate(pdf.pages, 0):
                 try:
                     text = page.extract_text()
                     if text:
@@ -101,7 +101,7 @@ class PDFProcessor:
         with open(pdf_path, 'rb') as file:
             pdf_reader = PyPDF2.PdfReader(file)
             
-            for page_num, page in enumerate(pdf_reader.pages, 1):
+            for page_num, page in enumerate(pdf_reader.pages, 0):
                 try:
                     text = page.extract_text()
                     if text:
@@ -173,7 +173,7 @@ class PDFProcessor:
                 # Start new section
                 current_section = {
                     'title': line,
-                    'page': page_num,
+                    'page_number': page_num,
                     'content': '',
                     'start_line': i
                 }
@@ -187,7 +187,7 @@ class PDFProcessor:
                     if not sections:
                         current_section = {
                             'title': 'Document Content',
-                            'page': page_num,
+                            'page_number': page_num,
                             'content': '',
                             'start_line': 0
                         }

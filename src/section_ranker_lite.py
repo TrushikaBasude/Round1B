@@ -108,7 +108,7 @@ class LightweightSectionRanker:
             'document': filename,
             'section_title': self._clean_title(parent_section.get('title', 'Section')),
             'refined_text': self._clean_content(content),
-            'page_number': parent_section.get('page_number', 1),
+            'page_number': parent_section.get('page_number', 0),
             'relevance_score': round(parent_relevance * quality_score, 3)
         }
     
@@ -137,7 +137,7 @@ class LightweightSectionRanker:
         for i, section in enumerate(sorted_sections, 1):
             formatted_section = {
                 'document': section.get('document', 'unknown'),
-                'page_number': section.get('page_number', 1),
+                'page_number': section.get('page_number', 0),
                 'section_title': section.get('section_title', 'Untitled'),
                 'importance_rank': i,
                 'relevance_score': section.get('final_relevance_score', 0.0),
@@ -159,7 +159,7 @@ class LightweightSectionRanker:
                 'document': subsection.get('document', 'unknown'),
                 'section_title': subsection.get('section_title', 'Section'),
                 'refined_text': subsection.get('refined_text', ''),
-                'page_number': subsection.get('page_number', 1),
+                'page_number': subsection.get('page_number', 0),
                 'importance_rank': i,
                 'relevance_score': subsection.get('relevance_score', 0.0)
             }

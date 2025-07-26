@@ -11,14 +11,14 @@
     ],
     "persona": "Travel Planner with expertise in organizing group trips, managing logistics, and creating memorable experiences for diverse groups",
     "job_to_be_done": "Plan a comprehensive 4-day trip to the South of France for a group of 10 college friends, including accommodations, activities, dining, and cultural experiences that fit a student budget",
-    "processing_timestamp": "2025-07-26T19:06:31.727221",
-    "processing_time_seconds": 4.04,
+    "processing_timestamp": "2025-07-26T19:09:16.494940",
+    "processing_time_seconds": 4.98,
     "total_documents": 7
   },
   "extracted_sections": [
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 1,
+      "page_number": 8,
       "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
       "importance_rank": 1,
       "relevance_score": 0.335,
@@ -26,7 +26,7 @@
     },
     {
       "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
+      "page_number": 0,
       "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
       "importance_rank": 2,
       "relevance_score": 0.333,
@@ -34,7 +34,7 @@
     },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 1,
+      "page_number": 0,
       "section_title": "Document Content",
       "importance_rank": 3,
       "relevance_score": 0.313,
@@ -42,7 +42,7 @@
     },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 1,
+      "page_number": 0,
       "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
       "importance_rank": 4,
       "relevance_score": 0.313,
@@ -50,7 +50,7 @@
     },
     {
       "document": "South of France - Things to Do_1753555810969.pdf",
-      "page_number": 1,
+      "page_number": 0,
       "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
       "importance_rank": 5,
       "relevance_score": 0.301,
@@ -58,7 +58,7 @@
     },
     {
       "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
+      "page_number": 3,
       "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
       "importance_rank": 6,
       "relevance_score": 0.292,
@@ -66,7 +66,7 @@
     },
     {
       "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
+      "page_number": 5,
       "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
       "importance_rank": 7,
       "relevance_score": 0.292,
@@ -74,7 +74,7 @@
     },
     {
       "document": "South of France - Things to Do_1753555810969.pdf",
-      "page_number": 1,
+      "page_number": 12,
       "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
       "importance_rank": 8,
       "relevance_score": 0.29,
@@ -82,7 +82,7 @@
     },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 1,
+      "page_number": 7,
       "section_title": "• Additional Tips: Plan your wine tour route in advance and consider hiring a driver or",
       "importance_rank": 9,
       "relevance_score": 0.288,
@@ -90,7 +90,7 @@
     },
     {
       "document": "South of France - Cuisine_1753555810970.pdf",
-      "page_number": 1,
+      "page_number": 3,
       "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
       "importance_rank": 10,
       "relevance_score": 0.286,
@@ -102,7 +102,7 @@
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
       "refined_text": "remember to pack light, versatile clothing, and essential items to make the most of your travel experience",
-      "page_number": 1,
+      "page_number": 8,
       "importance_rank": 1,
       "relevance_score": 0.317
     },
@@ -110,7 +110,7 @@
       "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
       "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
       "refined_text": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip",
-      "page_number": 1,
+      "page_number": 0,
       "importance_rank": 2,
       "relevance_score": 0.301
     },
@@ -118,7 +118,7 @@
       "document": "South of France - History_1753555810969.pdf",
       "section_title": "world and has been a center of learning and culture for centuries.",
       "refined_text": "• jardin des plantes: established in 1593, it is the oldest botanical garden in france and was created for the study of medicinal plants",
-      "page_number": 1,
+      "page_number": 9,
       "importance_rank": 3,
       "relevance_score": 0.299
     },
@@ -126,7 +126,7 @@
       "document": "South of France - Things to Do_1753555810969.pdf",
       "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
       "refined_text": "this guide to plan your trip and make the most of everything this beautiful region has to offer",
-      "page_number": 1,
+      "page_number": 12,
       "importance_rank": 4,
       "relevance_score": 0.296
     },
@@ -134,7 +134,7 @@
       "document": "South of France - Things to Do_1753555810969.pdf",
       "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
       "refined_text": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip",
-      "page_number": 1,
+      "page_number": 0,
       "importance_rank": 5,
       "relevance_score": 0.292
     },
@@ -142,7 +142,7 @@
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
       "refined_text": "kids, or in a group, this guide will help you make the most of your trip",
-      "page_number": 1,
+      "page_number": 0,
       "importance_rank": 6,
       "relevance_score": 0.281
     },
@@ -150,7 +150,7 @@
       "document": "South of France - Cuisine_1753555810970.pdf",
       "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
       "refined_text": "the menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience",
-      "page_number": 1,
+      "page_number": 3,
       "importance_rank": 7,
       "relevance_score": 0.272
     },
@@ -158,7 +158,7 @@
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "Document Content",
       "refined_text": "the ultimate south of france travel companion: your comprehensive guide to packing, planning, and exploring",
-      "page_number": 1,
+      "page_number": 0,
       "importance_rank": 8,
       "relevance_score": 0.26
     },
@@ -166,7 +166,7 @@
       "document": "South of France - History_1753555810969.pdf",
       "section_title": "Toulouse, known as \"La Ville Rose\" (The Pink City) due to its distinctive terracotta buildings,",
       "refined_text": "it was an important center during the roman period and later became a hub of the aerospace industry",
-      "page_number": 1,
+      "page_number": 6,
       "importance_rank": 9,
       "relevance_score": 0.208
     },
@@ -174,7 +174,7 @@
       "document": "South of France - Things to Do_1753555810969.pdf",
       "section_title": "views of Cannes.",
       "refined_text": "• marseille: visit r2 rooftop, a popular nightclub with panoramic views of the city and",
-      "page_number": 1,
+      "page_number": 10,
       "importance_rank": 10,
       "relevance_score": 0.198
     },
@@ -182,7 +182,7 @@
       "document": "South of France - Cuisine_1753555810970.pdf",
       "section_title": "perfect for a special occasion or as an indulgent afternoon snack. The dessert was",
       "refined_text": "created by a polish baker in the 1950s and quickly became a favorite among locals and tourists alike",
-      "page_number": 1,
+      "page_number": 2,
       "importance_rank": 11,
       "relevance_score": 0.18
     },
@@ -190,7 +190,7 @@
       "document": "South of France - Things to Do_1753555810969.pdf",
       "section_title": "Family-Friendly Activities",
       "refined_text": "the south of france offers a variety of activities that are perfect for families with children:",
-      "page_number": 1,
+      "page_number": 8,
       "importance_rank": 12,
       "relevance_score": 0.171
     }
