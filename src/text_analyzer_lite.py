@@ -14,16 +14,14 @@ class LightweightTextAnalyzer:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         
-        # Domain-specific keywords for relevance scoring
-        self.keyword_categories = {
-            'planning': ['plan', 'organize', 'schedule', 'arrange', 'prepare', 'itinerary', 'logistics'],
-            'travel': ['trip', 'travel', 'visit', 'tour', 'destination', 'journey', 'vacation', 'explore'],
-            'activities': ['activity', 'experience', 'attraction', 'adventure', 'things', 'do', 'see'],
-            'food': ['food', 'restaurant', 'cuisine', 'dining', 'eat', 'meal', 'cafe', 'bar', 'culinary'],
-            'culture': ['culture', 'history', 'tradition', 'heritage', 'festival', 'art', 'museum'],
-            'accommodation': ['hotel', 'stay', 'accommodation', 'lodging', 'room', 'guest', 'booking'],
-            'budget': ['budget', 'cheap', 'affordable', 'student', 'cost', 'price', 'money', 'value'],
-            'group': ['group', 'friends', 'together', 'social', 'party', 'team', 'collective']
+        # Universal keyword categories for any domain/persona
+        self.universal_keywords = {
+            'action': ['plan', 'organize', 'create', 'build', 'develop', 'manage', 'execute', 'implement'],
+            'experience': ['experience', 'activity', 'service', 'process', 'solution', 'approach', 'method'],
+            'quality': ['best', 'top', 'excellent', 'quality', 'premium', 'recommended', 'popular', 'effective'],
+            'practical': ['guide', 'tips', 'how', 'steps', 'instructions', 'advice', 'information', 'details'],
+            'context': ['important', 'key', 'main', 'essential', 'critical', 'significant', 'relevant', 'useful'],
+            'outcome': ['result', 'success', 'benefit', 'advantage', 'value', 'improvement', 'achievement']
         }
         
         # Stop words to filter out
@@ -121,37 +119,38 @@ class LightweightTextAnalyzer:
         overlap = len(text_words.intersection(ref_words))
         base_score = overlap / max(len(text_words), len(ref_words))
         
-        # Boost score based on category keywords
-        category_boost = 0.0
-        for category, keywords in self.keyword_categories.items():
-            category_matches = sum(1 for kw in keywords if kw in text)
-            if category_matches > 0:
-                category_boost += category_matches * 0.1
+        # Universal relevance boost based on content quality indicators
+        quality_boost = 0.0
+        for category, keywords in self.universal_keywords.items():
+            matches = sum(1 for kw in keywords if kw in text)
+            if matches > 0:
+                quality_boost += min(matches * 0.08, 0.3)  # Cap boost per category
         
-        return min(base_score + category_boost, 1.0)
+        return min(base_score + quality_boost, 1.0)
     
     def _classify_document_type(self, document: Dict[str, Any]) -> Dict[str, Any]:
-        """Simple document type classification"""
+        """Universal document classification based on content patterns"""
         filename = document.get('filename', '').lower()
+        content_sample = ' '.join([
+            section.get('content', '')[:200] 
+            for section in document.get('sections', [])[:3]
+        ]).lower()
         
-        if any(word in filename for word in ['restaurant', 'hotel', 'accommodation']):
-            doc_type = 'accommodation'
-        elif any(word in filename for word in ['cuisine', 'food', 'dining']):
-            doc_type = 'food'
-        elif any(word in filename for word in ['things', 'activities', 'do']):
-            doc_type = 'activities'
-        elif any(word in filename for word in ['history', 'culture', 'tradition']):
-            doc_type = 'culture'
-        elif any(word in filename for word in ['cities', 'places', 'destinations']):
-            doc_type = 'destinations'
-        elif any(word in filename for word in ['tips', 'tricks', 'guide']):
-            doc_type = 'guide'
+        # Pattern-based classification (works for any domain)
+        if any(word in filename + content_sample for word in ['guide', 'tips', 'how', 'instructions']):
+            doc_type = 'instructional'
+        elif any(word in filename + content_sample for word in ['overview', 'introduction', 'about', 'summary']):
+            doc_type = 'overview'
+        elif any(word in filename + content_sample for word in ['list', 'options', 'choices', 'varieties']):
+            doc_type = 'reference'
+        elif any(word in filename + content_sample for word in ['detailed', 'comprehensive', 'complete', 'full']):
+            doc_type = 'comprehensive'
         else:
-            doc_type = 'general'
+            doc_type = 'informational'
         
         return {
             'document_type': doc_type,
-            'classification_confidence': 0.8
+            'classification_confidence': 0.7
         }
     
     def _extract_subsections_fast(self, content: str) -> List[Dict[str, Any]]:

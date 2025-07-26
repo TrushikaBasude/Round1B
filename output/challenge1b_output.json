@@ -11,292 +11,188 @@
     ],
     "persona": "Travel Planner with expertise in organizing group trips, managing logistics, and creating memorable experiences for diverse groups",
     "job_to_be_done": "Plan a comprehensive 4-day trip to the South of France for a group of 10 college friends, including accommodations, activities, dining, and cultural experiences that fit a student budget",
-    "processing_timestamp": "2025-07-26T19:01:42.563623",
-    "processing_time_seconds": 3.93,
+    "processing_timestamp": "2025-07-26T19:06:31.727221",
+    "processing_time_seconds": 4.04,
     "total_documents": 7
   },
   "extracted_sections": [
     {
+      "document": "South of France - Tips and Tricks_1753555810968.pdf",
+      "page_number": 1,
+      "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
+      "importance_rank": 1,
+      "relevance_score": 0.335,
+      "content_preview": "enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the most of your travel experien..."
+    },
+    {
       "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
       "page_number": 1,
       "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
-      "importance_rank": 1,
-      "relevance_score": 0.651,
+      "importance_rank": 2,
+      "relevance_score": 0.333,
       "content_preview": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip."
     },
     {
-      "document": "South of France - Cuisine_1753555810970.pdf",
+      "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "page_number": 1,
-      "section_title": "take you through the different types of food, famous dishes, must-visit restaurants, renowned",
-      "importance_rank": 2,
-      "relevance_score": 0.564,
-      "content_preview": "wine regions, and the types of wines they produce to help you plan an unforgettable culinary adventure."
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
-      "section_title": "to eat and stay during your trip. From the vibrant cities of Nice and Marseille to the charming",
+      "section_title": "Document Content",
       "importance_rank": 3,
-      "relevance_score": 0.545,
-      "content_preview": "villages of Provence, the South of France promises an unforgettable travel experience. Bon voyage!"
+      "relevance_score": 0.313,
+      "content_preview": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, Planning, and Exploring"
     },
     {
-      "document": "South of France - Things to Do_1753555810969.pdf",
+      "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "page_number": 1,
-      "section_title": "Cultural Experiences",
+      "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
       "importance_rank": 4,
-      "relevance_score": 0.529,
-      "content_preview": "The South of France is rich in history and culture. Here are some activities to immerse yourself in the region's heritage:"
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "page_number": 1,
-      "section_title": "• Nice: Try creative cocktails at Le Comptoir du Marché, a trendy bar in the old town.",
-      "importance_rank": 5,
-      "relevance_score": 0.513,
-      "content_preview": "• Cannes: Experience dining and entertainment at La Folie Douce, with live music, DJs,"
-    },
-    {
-      "document": "South of France - Cities_1753555810970.pdf",
-      "page_number": 1,
-      "section_title": "• Cité de l'Espace: This space-themed science museum features interactive exhibits, a",
-      "importance_rank": 6,
-      "relevance_score": 0.505,
-      "content_preview": "planetarium, and a replica of the Mir space station. It's an engaging and educational experience for visitors of all ages."
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "page_number": 1,
-      "section_title": "your culinary journey and savor the tastes of the South of France, creating memories that will",
-      "importance_rank": 7,
-      "relevance_score": 0.498,
-      "content_preview": "linger long after your trip has ended. Bon appétit!"
+      "relevance_score": 0.313,
+      "content_preview": "kids, or in a group, this guide will help you make the most of your trip."
     },
     {
       "document": "South of France - Things to Do_1753555810969.pdf",
       "page_number": 1,
       "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
-      "importance_rank": 8,
-      "relevance_score": 0.489,
+      "importance_rank": 5,
+      "relevance_score": 0.301,
       "content_preview": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip."
     },
     {
-      "document": "South of France - Things to Do_1753555810969.pdf",
+      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
       "page_number": 1,
-      "section_title": "• Nîmes: Visit the Roman amphitheater and learn about ancient Roman history.",
-      "importance_rank": 9,
-      "relevance_score": 0.484,
-      "content_preview": "• Arles: Explore the Roman ruins and the Musée de l'Arles Antique, which showcases artifacts from the city's past."
+      "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
+      "importance_rank": 6,
+      "relevance_score": 0.292,
+      "content_preview": "Mediterranean. The lavish decor and exceptional service make it a dining experience"
+    },
+    {
+      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
+      "page_number": 1,
+      "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
+      "importance_rank": 7,
+      "relevance_score": 0.292,
+      "content_preview": "Mediterranean. The lavish decor and exceptional service make it a dining experience"
     },
     {
       "document": "South of France - Things to Do_1753555810969.pdf",
       "page_number": 1,
-      "section_title": "• Cerbère-Banyuls: Visit the marine reserve for an unforgettable diving experience.",
-      "importance_rank": 10,
-      "relevance_score": 0.482,
-      "content_preview": "• Mediterranean Coast: Charter a yacht or join a sailing tour to explore the coastline"
+      "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
+      "importance_rank": 8,
+      "relevance_score": 0.29,
+      "content_preview": "this guide to plan your trip and make the most of everything this beautiful region has to offer."
+    },
+    {
+      "document": "South of France - Tips and Tricks_1753555810968.pdf",
+      "page_number": 1,
+      "section_title": "• Additional Tips: Plan your wine tour route in advance and consider hiring a driver or",
+      "importance_rank": 9,
+      "relevance_score": 0.288,
+      "content_preview": "joining a guided tour to avoid drinking and driving."
     },
     {
       "document": "South of France - Cuisine_1753555810970.pdf",
       "page_number": 1,
       "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
-      "importance_rank": 11,
-      "relevance_score": 0.474,
-      "content_preview": "wines. The menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience."
-    },
-    {
-      "document": "South of France - Cities_1753555810970.pdf",
-      "page_number": 1,
-      "section_title": "associated with Aix-en-Provence, is preserved as a museum. Visitors can see where",
-      "importance_rank": 12,
-      "relevance_score": 0.465,
-      "content_preview": "Cézanne created many of his masterpieces and gain insight into his artistic process."
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
-      "section_title": "• Le Safari (Nice): Located in the heart of the old town, this restaurant offers a diverse",
-      "importance_rank": 13,
-      "relevance_score": 0.462,
-      "content_preview": "menu with options for both adults and children. The lively setting and outdoor seating"
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
-      "section_title": "restaurant serves refined Provençal cuisine with breathtaking views of the French",
-      "importance_rank": 14,
-      "relevance_score": 0.462,
-      "content_preview": "Riviera. The elegant setting and impeccable service make it a memorable dining"
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 1,
-      "section_title": "hosted famous artists and celebrities, offering a luxurious dining experience with a",
-      "importance_rank": 15,
-      "relevance_score": 0.444,
-      "content_preview": "focus on Provençal cuisine. The art-filled setting and gourmet dishes make it a unique"
+      "importance_rank": 10,
+      "relevance_score": 0.286,
+      "content_preview": "wines. The menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience..."
     }
   ],
   "subsection_analysis": [
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
-      "refined_text": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip",
-      "page_number": 1,
-      "importance_rank": 1,
-      "relevance_score": 0.653
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "section_title": "take you through the different types of food, famous dishes, must-visit restaurants, renowned",
-      "refined_text": "wine regions, and the types of wines they produce to help you plan an unforgettable culinary adventure",
-      "page_number": 1,
-      "importance_rank": 2,
-      "relevance_score": 0.588
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "• Nîmes: Visit the Roman amphitheater and learn about ancient Roman history.",
-      "refined_text": "• arles: explore the roman ruins and the musée de l'arles antique, which showcases artifacts from the city's past",
-      "page_number": 1,
-      "importance_rank": 3,
-      "relevance_score": 0.547
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
-      "refined_text": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip",
-      "page_number": 1,
-      "importance_rank": 4,
-      "relevance_score": 0.496
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
-      "refined_text": "the menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience",
-      "page_number": 1,
-      "importance_rank": 5,
-      "relevance_score": 0.476
-    },
-    {
-      "document": "South of France - Traditions and Culture_1753555810968.pdf",
-      "section_title": "integral part of the local culture, and vineyards often host tours and tastings. The tradition of",
-      "refined_text": "winemaking dates back to roman times, and the region's diverse terroir contributes to a wide variety of wine styles",
-      "page_number": 1,
-      "importance_rank": 6,
-      "relevance_score": 0.456
-    },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
       "refined_text": "remember to pack light, versatile clothing, and essential items to make the most of your travel experience",
       "page_number": 1,
-      "importance_rank": 7,
-      "relevance_score": 0.453
+      "importance_rank": 1,
+      "relevance_score": 0.317
+    },
+    {
+      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
+      "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
+      "refined_text": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip",
+      "page_number": 1,
+      "importance_rank": 2,
+      "relevance_score": 0.301
     },
     {
       "document": "South of France - History_1753555810969.pdf",
       "section_title": "world and has been a center of learning and culture for centuries.",
       "refined_text": "• jardin des plantes: established in 1593, it is the oldest botanical garden in france and was created for the study of medicinal plants",
       "page_number": 1,
-      "importance_rank": 8,
-      "relevance_score": 0.439
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "• Nice: Try creative cocktails at Le Comptoir du Marché, a trendy bar in the old town.",
-      "refined_text": "• cannes: experience dining and entertainment at la folie douce, with live music, djs,",
-      "page_number": 1,
-      "importance_rank": 9,
-      "relevance_score": 0.434
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "• Cerbère-Banyuls: Visit the marine reserve for an unforgettable diving experience.",
-      "refined_text": "• mediterranean coast: charter a yacht or join a sailing tour to explore the coastline",
-      "page_number": 1,
-      "importance_rank": 10,
-      "relevance_score": 0.433
+      "importance_rank": 3,
+      "relevance_score": 0.299
     },
     {
       "document": "South of France - Things to Do_1753555810969.pdf",
       "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
       "refined_text": "this guide to plan your trip and make the most of everything this beautiful region has to offer",
       "page_number": 1,
-      "importance_rank": 11,
-      "relevance_score": 0.422
+      "importance_rank": 4,
+      "relevance_score": 0.296
     },
     {
-      "document": "South of France - Cities_1753555810970.pdf",
-      "section_title": "world's leading aircraft manufacturers.",
-      "refined_text": "• aeroscopia museum: explore the history of aviation at the aeroscopia museum, which features a collection of historic aircraft",
+      "document": "South of France - Things to Do_1753555810969.pdf",
+      "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
+      "refined_text": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip",
       "page_number": 1,
-      "importance_rank": 12,
-      "relevance_score": 0.406
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "section_title": "to eat and stay during your trip. From the vibrant cities of Nice and Marseille to the charming",
-      "refined_text": "villages of provence, the south of france promises an unforgettable travel experience",
-      "page_number": 1,
-      "importance_rank": 13,
-      "relevance_score": 0.399
+      "importance_rank": 5,
+      "relevance_score": 0.292
     },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
       "refined_text": "kids, or in a group, this guide will help you make the most of your trip",
       "page_number": 1,
-      "importance_rank": 14,
-      "relevance_score": 0.393
+      "importance_rank": 6,
+      "relevance_score": 0.281
     },
     {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "section_title": "• Le Petit Pontoise (Paris): A charming bistro offering a variety of traditional French",
-      "refined_text": "the cozy atmosphere and friendly service make it a great spot for a casual meal",
+      "document": "South of France - Cuisine_1753555810970.pdf",
+      "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
+      "refined_text": "the menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience",
       "page_number": 1,
-      "importance_rank": 15,
-      "relevance_score": 0.381
-    },
-    {
-      "document": "South of France - Cities_1753555810970.pdf",
-      "section_title": "associated with Aix-en-Provence, is preserved as a museum. Visitors can see where",
-      "refined_text": "cézanne created many of his masterpieces and gain insight into his artistic process",
-      "page_number": 1,
-      "importance_rank": 16,
-      "relevance_score": 0.369
+      "importance_rank": 7,
+      "relevance_score": 0.272
     },
     {
       "document": "South of France - Tips and Tricks_1753555810968.pdf",
       "section_title": "Document Content",
       "refined_text": "the ultimate south of france travel companion: your comprehensive guide to packing, planning, and exploring",
       "page_number": 1,
-      "importance_rank": 17,
-      "relevance_score": 0.365
+      "importance_rank": 8,
+      "relevance_score": 0.26
     },
     {
       "document": "South of France - History_1753555810969.pdf",
-      "section_title": "Perpignan, located near the Spanish border, has a unique blend of French and Catalan",
-      "refined_text": "the city was once the capital of the kingdom of majorca and has a rich history reflected in its architecture and culture",
+      "section_title": "Toulouse, known as \"La Ville Rose\" (The Pink City) due to its distinctive terracotta buildings,",
+      "refined_text": "it was an important center during the roman period and later became a hub of the aerospace industry",
       "page_number": 1,
-      "importance_rank": 18,
-      "relevance_score": 0.364
+      "importance_rank": 9,
+      "relevance_score": 0.208
     },
     {
-      "document": "South of France - Cities_1753555810970.pdf",
-      "section_title": "local seafood culture.",
-      "refined_text": "• street art in cours julien: explore the vibrant street art scene in the cours julien district",
+      "document": "South of France - Things to Do_1753555810969.pdf",
+      "section_title": "views of Cannes.",
+      "refined_text": "• marseille: visit r2 rooftop, a popular nightclub with panoramic views of the city and",
       "page_number": 1,
-      "importance_rank": 19,
-      "relevance_score": 0.363
+      "importance_rank": 10,
+      "relevance_score": 0.198
     },
     {
       "document": "South of France - Cuisine_1753555810970.pdf",
-      "section_title": "Must-Visit Restaurants",
-      "refined_text": "to truly experience the culinary delights of the south of france, here are some restaurants",
+      "section_title": "perfect for a special occasion or as an indulgent afternoon snack. The dessert was",
+      "refined_text": "created by a polish baker in the 1950s and quickly became a favorite among locals and tourists alike",
       "page_number": 1,
-      "importance_rank": 20,
-      "relevance_score": 0.361
+      "importance_rank": 11,
+      "relevance_score": 0.18
+    },
+    {
+      "document": "South of France - Things to Do_1753555810969.pdf",
+      "section_title": "Family-Friendly Activities",
+      "refined_text": "the south of france offers a variety of activities that are perfect for families with children:",
+      "page_number": 1,
+      "importance_rank": 12,
+      "relevance_score": 0.171
     }
   ]
 }

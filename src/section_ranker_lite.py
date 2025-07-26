@@ -13,9 +13,9 @@ class LightweightSectionRanker:
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        # Limit output to reduce JSON size and improve performance
-        self.max_sections = 15  # Reduced from 20+
-        self.max_subsections = 20  # Reduced from 50+
+        # Optimized limits for generalized, accurate output (~150-200 lines total)
+        self.max_sections = 10  # Focus on most relevant sections
+        self.max_subsections = 12  # Streamlined subsection analysis
     
     def rank_sections(self, analyzed_documents: List[Dict[str, Any]], 
                      persona: str, job_to_be_done: str) -> Dict[str, Any]:
@@ -36,12 +36,13 @@ class LightweightSectionRanker:
                     )
                     all_sections.append(enhanced_section)
                     
-                    # Process subsections efficiently
-                    for subsection in section.get('subsections', [])[:3]:  # Limit subsections per section
-                        enhanced_subsection = self._score_subsection_optimized(
-                            subsection, section, filename, doc_type
-                        )
-                        all_subsections.append(enhanced_subsection)
+                    # Process only high-quality subsections
+                    for subsection in section.get('subsections', [])[:2]:  # Max 2 per section
+                        if subsection.get('word_count', 0) >= 15:  # Quality filter
+                            enhanced_subsection = self._score_subsection_optimized(
+                                subsection, section, filename, doc_type
+                            )
+                            all_subsections.append(enhanced_subsection)
             
             # Rank and format with size limits
             ranked_sections = self._rank_and_format_sections_optimized(all_sections)
@@ -112,21 +113,19 @@ class LightweightSectionRanker:
         }
     
     def _get_document_type_boost(self, doc_type: str, job_to_be_done: str) -> float:
-        """Calculate document type relevance boost"""
+        """Universal document type relevance calculation"""
         job_lower = job_to_be_done.lower()
         
-        # Map document types to job relevance
-        type_relevance = {
-            'accommodation': 0.3 if 'accommodat' in job_lower or 'hotel' in job_lower or 'stay' in job_lower else 0.1,
-            'activities': 0.3 if 'activit' in job_lower or 'experience' in job_lower or 'do' in job_lower else 0.1,
-            'food': 0.3 if 'dining' in job_lower or 'food' in job_lower or 'restaurant' in job_lower else 0.1,
-            'culture': 0.3 if 'cultur' in job_lower or 'experience' in job_lower or 'heritage' in job_lower else 0.1,
-            'destinations': 0.25 if 'trip' in job_lower or 'visit' in job_lower or 'destination' in job_lower else 0.1,
-            'guide': 0.2 if 'plan' in job_lower or 'organize' in job_lower or 'tip' in job_lower else 0.1,
-            'general': 0.15
+        # Universal patterns work across all domains
+        type_boosts = {
+            'instructional': 0.25 if any(word in job_lower for word in ['plan', 'organize', 'create', 'build']) else 0.1,
+            'comprehensive': 0.3 if any(word in job_lower for word in ['comprehensive', 'complete', 'detailed']) else 0.15,
+            'reference': 0.2 if any(word in job_lower for word in ['find', 'choose', 'select', 'options']) else 0.1,
+            'overview': 0.15 if any(word in job_lower for word in ['understand', 'learn', 'overview']) else 0.1,
+            'informational': 0.2
         }
         
-        return type_relevance.get(doc_type, 0.15)
+        return type_boosts.get(doc_type, 0.15)
     
     def _rank_and_format_sections_optimized(self, sections: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Rank sections with optimized output format"""
@@ -180,7 +179,7 @@ class LightweightSectionRanker:
         # Limit length
         return cleaned[:100] + "..." if len(cleaned) > 100 else cleaned
     
-    def _create_preview(self, content: str, max_length: int = 150) -> str:
+    def _create_preview(self, content: str, max_length: int = 120) -> str:
         """Create concise content preview"""
         if not content:
             return ""
@@ -189,7 +188,7 @@ class LightweightSectionRanker:
         cleaned = re.sub(r'\s+', ' ', content.strip())
         return cleaned[:max_length] + "..." if len(cleaned) > max_length else cleaned
     
-    def _clean_content(self, content: str, max_length: int = 200) -> str:
+    def _clean_content(self, content: str, max_length: int = 150) -> str:
         """Clean and limit subsection content"""
         if not content:
             return ""
