@@ -1,29 +1,93 @@
-# Adobe Round 1B: Persona-Driven Document Intelligence
+🧠 Overview
+The goal is to find the most relevant parts of a resume PDF for a particular job role. Our pipeline:
+Parses PDFs using layout-aware tools
+Detects section and subsection structure
+Uses a lightweight relevance scoring system (no ML models)
+Ranks and returns results in a clean JSON format
 
-A containerized Python solution that intelligently extracts and ranks document sections based on user persona and job requirements.
+📁 Directory Structure
+graphql
+Copy
+Edit
+├── input/                  # Input folder
+│   ├── sample.pdf         # here jsut as smpe and comaptibility test stored more                               #will work with more than 7 to 10 pdf more PDF resumes
+│   └── challenge1b_input.json  # JSON config with "persona" and "jd"
+│
+├── output/                 # Output folder
+│   └── challenge1b_output.json
+│
+├── src/                    # Source code
+│   ├── pdf_processor.py
+│   ├── text_analyzer_lite.py
+│   └── section_ranker_lite.py,etc
+│
+├── main.py                 # Entry point
+├── Dockerfile              # Docker setup
+└── requirements_lite.txt   # Minimal dependencies
+🧪 Input Format (input/*.json)
+json
+Copy
+Edit
+{
+  "persona": "I'm a backend engineer interested in system design roles with Go and Kubernetes.",
+  "jd": "Looking for a software engineer with expertise in backend systems, Docker, Kubernetes, and cloud deployment.",
+  "pdf": "resume1.pdf"
+}
+📤 Output Format (output/challenge1b_output.json)
+json
+Copy
 
-## Overview
+Edit
+{
+  "extracted_sections": [
+    {
+      "document": "resume1.pdf",
+      "section_title": "Experience",
+      "importance_rank": 1,
+      "page_number": 2
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "resume1.pdf",
+      "refined_text": "Worked on scalable cloud-native backend with Kubernetes.",
+      "page_number": 2
+    }
+  ]
+}
+🚀 Quick Start
+Place your PDFs and input config in ./input/
 
-This solution processes collections of PDF documents (3-10 files) and identifies the most relevant sections for a specific persona and their job-to-be-done. It uses advanced NLP techniques to understand document structure, extract semantic features, and rank content by relevance.
+Run the pipeline using Docker
 
-## Features
+Results are saved to ./output/challenge1b_output.json
 
-- **Robust PDF Processing**: Handles various PDF formats with fallback mechanisms
-- **Intelligent Section Detection**: Automatically identifies document structure and headings
-- **Semantic Analysis**: Uses TF-IDF and spaCy for content understanding
-- **Multi-factor Ranking**: Combines relevance, position, length, and entity factors
-- **Offline Processing**: No internet connectivity required
-- **Fast Performance**: Processes 3-5 documents in under 60 seconds
+🐳 Docker Instructions
+bash
+Copy
+Edit
+# Build the Docker image
+docker build -t challenge_1b_adobe .
 
-## Requirements
+# Run the container (make sure input/ and output/ exist in your project root)
+docker run -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output challenge_1b_adobe
+⚙️ Dependencies
+pdfplumber
 
-- Docker with AMD64 architecture support
-- Input PDFs (up to 10 documents)
-- Configuration file with persona and job description
+PyPDF2
 
-## Quick Start
+numpy
 
-### 1. Build the Docker Image
+Installable via:
 
-```bash
-docker build --platform linux/amd64 -t persona-doc-intelligence:latest .
+bash
+Copy
+Edit
+pip install -r requirements_lite.txt
+📌 Notes
+No large ML models are used — optimized for speed and minimal footprint.
+
+Works completely offline.
+
+Flexible: any .json in the input folder is picked up automatically.
+

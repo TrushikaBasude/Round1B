@@ -1,198 +1,76 @@
 {
-  "metadata": {
-    "input_documents": [
-      "South of France - Traditions and Culture_1753555810968.pdf",
-      "South of France - Tips and Tricks_1753555810968.pdf",
-      "South of France - Things to Do_1753555810969.pdf",
-      "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "South of France - History_1753555810969.pdf",
-      "South of France - Cuisine_1753555810970.pdf",
-      "South of France - Cities_1753555810970.pdf"
+    "metadata": {
+        "input_documents": [
+            "Breakfast Ideas.pdf",
+            "Dinner Ideas - Mains_1.pdf",
+            "Dinner Ideas - Mains_2.pdf",
+            "Dinner Ideas - Sides_1.pdf",
+            "Dinner Ideas - Sides_2.pdf",
+            "Dinner Ideas - Sides_3.pdf",
+            "Dinner Ideas - Sides_4.pdf",
+            "Lunch Ideas.pdf"
+        ],
+        "persona": "Food Contractor",
+        "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+        "processing_timestamp": "2025-07-26T21:28:51.679603"
+    },
+    "extracted_sections": [
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "section_title": "\u2022 Instructions: o Form risotto",
+            "importance_rank": 1,
+            "page_number": 4
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "section_title": "o Oil for frying \u2022",
+            "importance_rank": 2,
+            "page_number": 5
+        },
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "section_title": "o 1 teaspoon paprika o",
+            "importance_rank": 3,
+            "page_number": 7
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "section_title": "\u2022 Serve immediately. Berry and",
+            "importance_rank": 4,
+            "page_number": 15
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "section_title": "Pancakes Ingredients: \u2022 1 cup",
+            "importance_rank": 5,
+            "page_number": 2
+        }
     ],
-    "persona": "Travel Planner with expertise in organizing group trips, managing logistics, and creating memorable experiences for diverse groups",
-    "job_to_be_done": "Plan a comprehensive 4-day trip to the South of France for a group of 10 college friends, including accommodations, activities, dining, and cultural experiences that fit a student budget",
-    "processing_timestamp": "2025-07-26T19:09:16.494940",
-    "processing_time_seconds": 4.98,
-    "total_documents": 7
-  },
-  "extracted_sections": [
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 8,
-      "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
-      "importance_rank": 1,
-      "relevance_score": 0.335,
-      "content_preview": "enjoyable trip. Remember to pack light, versatile clothing, and essential items to make the most of your travel experien..."
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 0,
-      "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
-      "importance_rank": 2,
-      "relevance_score": 0.333,
-      "content_preview": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip."
-    },
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 0,
-      "section_title": "Document Content",
-      "importance_rank": 3,
-      "relevance_score": 0.313,
-      "content_preview": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, Planning, and Exploring"
-    },
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 0,
-      "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
-      "importance_rank": 4,
-      "relevance_score": 0.313,
-      "content_preview": "kids, or in a group, this guide will help you make the most of your trip."
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "page_number": 0,
-      "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
-      "importance_rank": 5,
-      "relevance_score": 0.301,
-      "content_preview": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip."
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 3,
-      "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
-      "importance_rank": 6,
-      "relevance_score": 0.292,
-      "content_preview": "Mediterranean. The lavish decor and exceptional service make it a dining experience"
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "page_number": 5,
-      "section_title": "opulent dining experience with a menu that celebrates the flavors of the",
-      "importance_rank": 7,
-      "relevance_score": 0.292,
-      "content_preview": "Mediterranean. The lavish decor and exceptional service make it a dining experience"
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "page_number": 12,
-      "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
-      "importance_rank": 8,
-      "relevance_score": 0.29,
-      "content_preview": "this guide to plan your trip and make the most of everything this beautiful region has to offer."
-    },
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "page_number": 7,
-      "section_title": "• Additional Tips: Plan your wine tour route in advance and consider hiring a driver or",
-      "importance_rank": 9,
-      "relevance_score": 0.288,
-      "content_preview": "joining a guided tour to avoid drinking and driving."
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "page_number": 3,
-      "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
-      "importance_rank": 10,
-      "relevance_score": 0.286,
-      "content_preview": "wines. The menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience..."
-    }
-  ],
-  "subsection_analysis": [
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "section_title": "incorporating the tips and tricks provided, you'll be well-prepared for a comfortable and",
-      "refined_text": "remember to pack light, versatile clothing, and essential items to make the most of your travel experience",
-      "page_number": 8,
-      "importance_rank": 1,
-      "relevance_score": 0.317
-    },
-    {
-      "document": "South of France - Restaurants and Hotels_1753555810969.pdf",
-      "section_title": "Whether you're looking for budget-friendly options, family-friendly spots, upscale dining, or",
-      "refined_text": "luxurious experiences, this guide will help you find the perfect restaurants and hotels for your trip",
-      "page_number": 0,
-      "importance_rank": 2,
-      "relevance_score": 0.301
-    },
-    {
-      "document": "South of France - History_1753555810969.pdf",
-      "section_title": "world and has been a center of learning and culture for centuries.",
-      "refined_text": "• jardin des plantes: established in 1593, it is the oldest botanical garden in france and was created for the study of medicinal plants",
-      "page_number": 9,
-      "importance_rank": 3,
-      "relevance_score": 0.299
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "France promises an unforgettable journey filled with memories that will last a lifetime. Use",
-      "refined_text": "this guide to plan your trip and make the most of everything this beautiful region has to offer",
-      "page_number": 12,
-      "importance_rank": 4,
-      "relevance_score": 0.296
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "relaxation, or cultural enrichment, this region has something for everyone. This guide will",
-      "refined_text": "take you through a variety of activities and must-see attractions to help you plan an unforgettable trip",
-      "page_number": 0,
-      "importance_rank": 5,
-      "relevance_score": 0.292
-    },
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "section_title": "to travel tips, catering to all seasons and various activities. Whether you're traveling solo, with",
-      "refined_text": "kids, or in a group, this guide will help you make the most of your trip",
-      "page_number": 0,
-      "importance_rank": 6,
-      "relevance_score": 0.281
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "section_title": "in a historic building in the heart of Saint-Émilion, a town known for its world-class",
-      "refined_text": "the menu features dishes that pair beautifully with the local wines, creating a truly memorable dining experience",
-      "page_number": 3,
-      "importance_rank": 7,
-      "relevance_score": 0.272
-    },
-    {
-      "document": "South of France - Tips and Tricks_1753555810968.pdf",
-      "section_title": "Document Content",
-      "refined_text": "the ultimate south of france travel companion: your comprehensive guide to packing, planning, and exploring",
-      "page_number": 0,
-      "importance_rank": 8,
-      "relevance_score": 0.26
-    },
-    {
-      "document": "South of France - History_1753555810969.pdf",
-      "section_title": "Toulouse, known as \"La Ville Rose\" (The Pink City) due to its distinctive terracotta buildings,",
-      "refined_text": "it was an important center during the roman period and later became a hub of the aerospace industry",
-      "page_number": 6,
-      "importance_rank": 9,
-      "relevance_score": 0.208
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "views of Cannes.",
-      "refined_text": "• marseille: visit r2 rooftop, a popular nightclub with panoramic views of the city and",
-      "page_number": 10,
-      "importance_rank": 10,
-      "relevance_score": 0.198
-    },
-    {
-      "document": "South of France - Cuisine_1753555810970.pdf",
-      "section_title": "perfect for a special occasion or as an indulgent afternoon snack. The dessert was",
-      "refined_text": "created by a polish baker in the 1950s and quickly became a favorite among locals and tourists alike",
-      "page_number": 2,
-      "importance_rank": 11,
-      "relevance_score": 0.18
-    },
-    {
-      "document": "South of France - Things to Do_1753555810969.pdf",
-      "section_title": "Family-Friendly Activities",
-      "refined_text": "the south of france offers a variety of activities that are perfect for families with children:",
-      "page_number": 8,
-      "importance_rank": 12,
-      "relevance_score": 0.171
-    }
-  ]
+    "subsection_analysis": [
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "refined_text": "\u2022 Instructions: o Form risotto into balls and stuff with a cube of mozzarella. o Dredge balls in flour, dip in beaten eggs, and coat with breadcrumbs. o Fry in hot oil until golden. o Drain on paper towels and serve warm. Baba Ganoush \u2022 Ingredients: o 2 eggplants o 1/4 cup tahini o 1/4 cup lemon juice o 2 cloves garlic o 1/4 cup olive oil o 1 teaspoon salt \u2022 Instructions: o Roast eggplants until soft, then peel and mash. o Blend mashed eggplant, tahini, lemon juice, minced garlic, and salt in a ...",
+            "page_number": 4
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "refined_text": "o Oil for frying \u2022 Instructions: o Mix grated cassava with coconut milk and salt. o Form mixture into flat cakes. o Fry in hot oil until golden. o Drain on paper towels and serve warm. Banchan \u2022 Ingredients: o Assorted small side dishes like pickled radish, spinach, bean sprouts, kimchi \u2022 Instructions: o Prepare each side dish separately. o Arrange on small plates. o Serve as accompaniments to the main meal. Banh Beo \u2022 Ingredients: o 1 cup rice flour o 1/2 cup water o 1/2 cup coconut milk o 1/4 ...",
+            "page_number": 5
+        },
+        {
+            "document": "Dinner Ideas - Sides_2.pdf",
+            "refined_text": "o 1 teaspoon paprika o 1 teaspoon salt o Oil for frying \u2022 Instructions: o Mix flour, butter, water, and beaten egg to form a dough, then let rest. o Saut\u00e9 ground beef, diced onion, minced garlic, chopped olives, and raisins with cumin, paprika, and salt until cooked. o Roll out dough and cut into circles. o Place a spoonful of filling on each circle and fold to seal. o Fry in hot oil until golden. o Drain on paper towels and serve warm. Escalivada \u2022 Ingredients: o 2 eggplants o 2 bell peppers o ...",
+            "page_number": 7
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "refined_text": "\u2022 Serve immediately. Berry and Spinach Smoothie Ingredients: \u2022 1/2 cup frozen berries \u2022 1/2 cup spinach \u2022 1/2 cup Greek yogurt \u2022 1/2 cup almond milk \u2022 1 tablespoon honey Instructions: \u2022 In a blender, combine frozen berries, spinach, Greek yogurt, almond milk, and honey. \u2022 Blend until smooth. \u2022 Serve immediately. Fruit and Nut Bars Ingredients: \u2022 1 cup dates, pitted \u2022 1 cup mixed nuts \u2022 1/4 cup dried fruit \u2022 1 tablespoon honey Instructions: \u2022 In a food processor, combine dates, mixed nuts, dried ...",
+            "page_number": 15
+        },
+        {
+            "document": "Breakfast Ideas.pdf",
+            "refined_text": "Pancakes Ingredients: \u2022 1 cup all-purpose flour \u2022 2 tablespoons sugar \u2022 1 teaspoon baking powder \u2022 1/2 teaspoon baking soda \u2022 1/4 teaspoon salt \u2022 1 cup buttermilk \u2022 1 large egg \u2022 2 tablespoons melted butter \u2022 1 teaspoon vanilla extract Instructions: \u2022 In a bowl, whisk together flour, sugar, baking powder, baking soda, and salt. \u2022 In another bowl, combine buttermilk, egg, melted butter, and vanilla extract. \u2022 Pour the wet ingredients into the dry ingredients and stir until just combined. \u2022 Heat a...",
+            "page_number": 2
+        }
+    ]
 }
